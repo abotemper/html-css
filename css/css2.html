@@ -29,6 +29,26 @@
     .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11{
       color: blue;
     }
+
+    /* test后写的生效，所以是蓝色的 */
+    .test4{
+      color: red;
+    }
+    .test4{
+      color: blue;
+    }
+
+    /* 虽然后写了蓝色，但是又important，所以是红色 */
+    .test5{
+      color: red!important;
+    }
+    .test5{
+      color: blue;
+    }
+    /* 虽然在id选择器里写了红色，但是我们在下面test6的属性里把它改了，因为属性里写优先级高，所以会是蓝色 */
+    #test6{
+      color: red;
+    }
   </style>
 </head>
 <body class="body" id=""body>
@@ -36,5 +56,12 @@
   <div class="test2">test2</div>
   <div id="test3" class="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11">test3</div>
   
+  <!-- !important 优先级最高
+  元素属性， 优先级高
+  相同 权重 后写的生效 -->
+  <div class="test4">test4</div>
+  <div class="test5">test2</div>
+  <div id="test6" style="color:blue">test3</div>
+
 </body>
 </html>
