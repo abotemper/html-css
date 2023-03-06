@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>not-layouy-styles</title>
+  <style>
+    body{
+      /* font-family: "monaco";  前面没有请用后面的*/
+      /* font-family: "monaco", "PingFang SC"; */
+      font-family: "AAAA", "monaco", "PingFang SC";
+    }
+    .chinese{
+      /* 这是生产环境的写法 */
+      font-family: "PingFang SC", "Microsoft Yahei", monospace;
+      /* font-family: "Microsoft Yahei", serif; */
+
+    }
+    .weight{
+
+    }
+    @font-face {
+      font-family: "IF";
+      src: url("./IndieFlo.tdf")
+
+    }
+    .custom-font{
+      font-family: IF;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>非布局样式</h1>
+  <h2>1.字体，字重，颜色，大小，行高</h2>
+  <h3>字体族:serif, sans-serif, monospace, cursive, fantasy，这个级别不用引号引</h3>
+  <h3>多字体fallback， 比如说规定了三个字体，一个找不到就找另一个</h3>
+  <h3>网络字体，自定义字体</h3>
+  <h3>iconfont</h3>
+
+  <h2>2.背景，边框</h2>
+  <h2>3.滚动，换行</h2>
+  <h2>4.粗体，斜体，下划线</h2>
+  <h2>5.其他</h2>
+
+  hello world 你好， 世界
+  <div class="chinese">你好</div>
+  <div class="weight">你好 Hellp World</div>
+  <div class="custom-font">你好 Hello World</div>
+</body>
+</html>

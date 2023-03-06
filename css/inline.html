@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Inline</title>
+  <style>
+    /* 行高不一样但渲染高度一致, 跟最高的保持一致 */
+    span{
+      background: red;
+
+    }
+    .c1{
+      line-height: 20px;
+    }
+    .c2{
+      line-height: 8px;
+
+    }
+    .c3{
+      line-height: 30px;
+    }
+    .c5{
+      line-height: 28px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div>
+    <span class="c1">inline box xfg 中文</span>
+    <span class="c2">inline box </span>
+    <span class="c3">inline box </span>
+    inline box
+    <span class="c4">inline box </span>
+  </div>
+</body>
+</html>
